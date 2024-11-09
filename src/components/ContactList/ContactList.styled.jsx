@@ -2,6 +2,15 @@
 
 import styled from 'styled-components'
 
+export const ContactList = styled.ul`
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+`;
+
 export const ContactItems = styled.li`
   display: flex;
   justify-content: space-between;
@@ -9,15 +18,15 @@ export const ContactItems = styled.li`
   margin-bottom: 10px;
 `;
 
-export const ContactName = styled.span`
+export const ContactData = styled.p`
   font-size: 25px;
   margin-right: 10px;
 `;
 
-export const ContactNumber = styled.span`
-  font-size: 20px;
+// export const ContactNumber = styled.span`
+//   font-size: 20px;
   
-`;
+// `;
 
 export const Button = styled.button`
   padding: 5px 20px;
