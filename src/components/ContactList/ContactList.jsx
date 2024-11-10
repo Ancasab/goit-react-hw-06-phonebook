@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ContactItems, ContactData,  Button } from './ContactList.styled'
+import { ListContact, ContactItems, ContactData,  Button } from './ContactList.styled'
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact, getContacts } from '../../redux/contactsSlice';
 import { getFilter } from '../../redux/filterSlice';
@@ -17,7 +17,7 @@ export const ContactList = () => {
 
 
     return (
-    <ul>
+      <ListContact>
       {filteredContacts.map(({ id, name, number }) => (
         <ContactItems key={id}>
           <ContactData>
@@ -30,7 +30,7 @@ export const ContactList = () => {
           </Button>
         </ContactItems>
       ))}
-    </ul>
+    </ListContact>
   );
 };
     

@@ -2,20 +2,20 @@
 
 import styled from 'styled-components'
 
-export const ContactList = styled.ul`
+export const ListContact = styled.ul`
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  gap: 20px;
+  // gap: 20px;
 `;
 
 export const ContactItems = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 `;
 
 export const ContactData = styled.p`
